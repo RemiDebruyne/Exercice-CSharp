@@ -8,4 +8,4 @@ Console.WriteLine("Entrez la longueur du premier coté (en cm)");
 string deuxiemeCoteChain = Console.ReadLine();
 double deuxiemeCote = double.Parse(deuxiemeCoteChain);
 
-Console.WriteLine($"La longueur de l'hypthénuse est : {Math.Pow(premierCote, 2) + Math.Pow(deuxiemeCote, 2)}");
+Console.WriteLine($"La longueur de l'hypthénuse est : {Math.Sqrt(Math.Pow(premierCote, 2) + Math.Pow(deuxiemeCote, 2))}");
