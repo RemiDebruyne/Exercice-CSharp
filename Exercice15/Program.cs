@@ -22,21 +22,23 @@ if (annee < 1)
 else if (annee <= 10)
 {
     if (age > 50)
-        Console.WriteLine($"Votre indemnité est deux {avantDixAns + salaire * 5}");
-    else if (age >= 46 && age <= 49)
-        Console.WriteLine($"Votre indemnité est deux {avantDixAns + salaire * 2}");
+        Console.WriteLine($"Votre indemnité est de {avantDixAns + salaire * 5}");
+    else if (age >= 46 && age <= 49)            
+        Console.WriteLine($"Votre indemnité est de {avantDixAns + salaire * 2}");
     else
-        Console.WriteLine($"Votre indemnité est deux {avantDixAns}");
+        Console.WriteLine($"Votre indemnité est de {avantDixAns}");
 
 }
 
 else
 {
     if (age > 50)
-        Console.WriteLine($"Votre indemnité est deux {apresDixAns + salaire * 5}");
+        Console.WriteLine($"Votre indemnité est de {apresDixAns + salaire * 5}");
     else if (age >= 46 && age <= 49)
-        Console.WriteLine($"Votre indemnité est deux {apresDixAns + salaire * 2}");
+        Console.WriteLine($"Votre indemnité est de {apresDixAns + salaire * 2}");
     else
-        Console.WriteLine($"Votre indemnité est deux {apresDixAns}");
+        Console.WriteLine($"Votre indemnité est de" +
+            $"" +
+            $" {apresDixAns}");
 }
 
