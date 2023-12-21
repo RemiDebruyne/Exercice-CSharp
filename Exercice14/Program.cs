@@ -30,8 +30,10 @@ else if (poids >= 54 && poids <= 59)
         Console.WriteLine("Prenez la taille 1");
     else if (taille <= 175)
         Console.WriteLine("Prenez la taille 2");
-    else
+    else if (taille <= 178)
         Console.WriteLine("Prenez la taille 3");
+    else
+        Console.WriteLine("Vous ne pouve pas vous habiller");
 
 }
 
@@ -41,13 +43,15 @@ else if (poids >= 60 && poids <= 65)
         Console.WriteLine("Prenez la taille 1");
     else if (taille <= 172)
         Console.WriteLine("Prenez la taille 2");
-    else
+    else if (taille <= 183)
         Console.WriteLine("Prenez la taille 3");
+    else 
+        Console.WriteLine("Vous ne pouvez pas vous habiller");
 }
 
 else if (poids >= 66 && poids <= 71)
 {
-    if (taille <= 157)
+    if (taille < 160 || taille < 183)
         Console.WriteLine("Vous ne pouvez pas vous habiller");
     else if (taille <= 172)
         Console.WriteLine("Prenez la taille 2");
