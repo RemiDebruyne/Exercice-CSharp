@@ -1,9 +1,10 @@
 ﻿
-float max = 0, min = 20, sommes = 0, moyenne;
+float max = 0, min = 20, sommes = 0;
 int nombreDeNote;
 bool saisieValide;
 
 Console.WriteLine("--- Tableau des notes ---");
+
 //Déclaration du nombre de notes dans le tableau
 Console.WriteLine("Combien de note comportera le tableau ? : ");
 do
@@ -54,21 +55,18 @@ if (saisieValide)
     {
         Console.WriteLine($"La note {i + 1} est de {notes[i]}/20");
     }
-
-        moyenne = sommes / nombreDeNote;
+;
     Console.ForegroundColor = ConsoleColor.Green;
     Console.WriteLine($"--- La note max est {max}/20");
     Console.ForegroundColor = ConsoleColor.Red;
     Console.WriteLine($"--- La note min est {min}/20");
     Console.ForegroundColor = ConsoleColor.Blue;
-    Console.WriteLine($"--- La note moyenne est de {moyenne}/20");
+    Console.WriteLine($"--- La note moyenne est de {sommes/ nombreDeNote}/20");
     Console.ResetColor();
 
-/*    Console.Write("Appuyez sur <Entrer> pour fermer le programme... ");
-    while (Console.ReadKey().Key != ConsoleKey.Enter) { }*/
 
-
-
+    Console.Write("Appuyez sur <Entrer> pour fermer le programme... ");
+    while (Console.ReadKey().Key != ConsoleKey.Enter) { }
 }
 
 
