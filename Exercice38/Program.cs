@@ -31,5 +31,5 @@ foreach(int i in arr)
     espace += " ";
 }
 
-
-Console.WriteLine($"\nLe nombre {firstNum} est à la {Array.IndexOf(arr, firstNum)} position");
+// +1 car la 1ère valeur est à l'indexe zéro et pas un
+Console.WriteLine($"\nLe nombre {firstNum} est à la {Array.IndexOf(arr, firstNum) + 1} position");
