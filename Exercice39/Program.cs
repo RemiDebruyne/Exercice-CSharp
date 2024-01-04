@@ -4,7 +4,7 @@
 string[] personnes = { "Sébastien", "Allan", "Dominique", "Eric", "Anthony", "Yves", "Aguit", "Adrien", "Jerome", "Walid", "Olivier", "Stéphanie", "Yannic", "Christopher", "Brice" };
 Random rnd = new Random();
 int pIndex = rnd.Next(personnes.Length);
-List<string?> personneDejaTiree = new List<string?>();
+List<string> personneDejaTiree = new List<string>();
 bool DejaGagne = personneDejaTiree.Contains(personnes[pIndex]);
 
 do

@@ -1,7 +1,8 @@
-﻿bool verification_adn(string chaine)
+﻿using System.Threading.Channels;
+
+bool verification_adn(string chaine)
 {
-    Console.WriteLine("Entrez la chaine ADN");
-    chaine = Console.ReadLine();
+
     if (!chaine.Contains('a') && !chaine.Contains('t') && !chaine.Contains('c') && !chaine.Contains('g'))
     {
         return false;
@@ -9,6 +10,9 @@
     else
         return true;
 }
+Console.WriteLine("Entrez la chaine ADN");
+string chaine = Console.ReadLine();
+Console.WriteLine(verification_adn(chaine));
 
 
 string saisie_adn(string saisie)
@@ -32,4 +36,3 @@ void proportion(string chaine, string sequence)
 }
 
 
-Console.WriteLine(verification_adn(Console.ReadLine()));
